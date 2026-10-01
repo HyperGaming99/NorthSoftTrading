@@ -203,7 +203,7 @@ TabCompleter {
     }
 
     private void giveOrDrop(Player player, ItemStack item) {
-        HashMap overflow = player.getInventory().addItem(new ItemStack[]{item});
+        java.util.Map<Integer, ItemStack> overflow = player.getInventory().addItem(new ItemStack[]{item});
         overflow.values().forEach(rest -> player.getWorld().dropItemNaturally(player.getLocation(), rest));
     }
 
