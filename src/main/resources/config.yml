@@ -1,0 +1,217 @@
+# Zusaetzliche Lore aus dem Resourcepack: Badge-Glyphen (Font northsoft:badges)
+# und der Tooltip-Rahmen je Seltenheit. Beides laesst sich einzeln abschalten.
+lore:
+  badges: true
+  tooltip-style: true
+
+# Booster-Packs. Rechtsklick startet den MythicMobs-Skill, der die Karten verteilt.
+# Die custom-model-data muss zum Eintrag in assets/minecraft/items/paper.json passen.
+packs:
+  mortal_monsters:
+    material: PAPER
+    custom-model-data: 632000
+    mythic-skill: nm_pack_open_mortal_monsters
+    display: '&5Mortal Monsters &fBooster Pack'
+    consume-on-success: true
+    cooldown-milliseconds: 500
+  nascent_nature:
+    material: PAPER
+    custom-model-data: 633000
+    mythic-skill: nm_pack_open_nascent_nature
+    display: '&eNascent Nature &fBooster Pack'
+    consume-on-success: true
+    cooldown-milliseconds: 500
+  the_menagerie:
+    material: PAPER
+    custom-model-data: 634000
+    mythic-skill: nm_pack_open_the_menagerie
+    display: '&6The Menagerie &fBooster Pack'
+    consume-on-success: true
+    cooldown-milliseconds: 500
+  starter:
+    material: PAPER
+    custom-model-data: 635000
+    mythic-skill: nm_pack_open_starter_pack
+    display: '&9Starter &fBooster Pack'
+    consume-on-success: true
+    cooldown-milliseconds: 500
+  helper:
+    material: PAPER
+    custom-model-data: 635010
+    mythic-skill: nm_pack_open_helper_pack
+    display: '&cHelper &fBooster Pack'
+    consume-on-success: true
+    cooldown-milliseconds: 500
+# Karten, die der Mechanic nstcgivecard{card=<id>} ausgeben kann.
+# Ohne ItemsAdder/Crucible baut das Plugin die Items selbst - deshalb stehen
+# Model und Name hier und nicht nur in den MythicMobs-Items.
+cards:
+  material: PAPER
+  lore:
+  - '&8Nog''s Trading Cards'
+  entries:
+    nm_card_bat: {model: 632001, display: '&fBat Card'}
+    nm_card_bogged: {model: 632002, display: '&fBogged Card'}
+    nm_card_breeze: {model: 632003, display: '&fBreeze Card'}
+    nm_card_cave_spider: {model: 632004, display: '&fCave Spider Card'}
+    nm_card_drowned: {model: 632005, display: '&fDrowned Card'}
+    nm_card_endermite: {model: 632006, display: '&fEndermite Card'}
+    nm_card_evoker: {model: 632007, display: '&fEvoker Card'}
+    nm_card_guardian: {model: 632008, display: '&fGuardian Card'}
+    nm_card_phantom: {model: 632009, display: '&fPhantom Card'}
+    nm_card_shulker: {model: 632010, display: '&fShulker Card'}
+    nm_card_silverfish: {model: 632011, display: '&fSilverfish Card'}
+    nm_card_skeleton_horse: {model: 632012, display: '&fSkeleton Horse Card'}
+    nm_card_spider: {model: 632013, display: '&fSpider Card'}
+    nm_card_strider: {model: 632014, display: '&fStrider Card'}
+    nm_card_vindicator: {model: 632015, display: '&fVindicator Card'}
+    nm_card_zoglin: {model: 632016, display: '&fZoglin Card'}
+    nm_card_zombie_villager: {model: 632017, display: '&fZombie Villager Card'}
+    nm_card_zombified_piglin: {model: 632018, display: '&fZombified Piglin Card'}
+    nm_card_rare_bat: {model: 632101, display: '&bBat Card'}
+    nm_card_rare_bogged: {model: 632102, display: '&bBogged Card'}
+    nm_card_rare_breeze: {model: 632103, display: '&bBreeze Card'}
+    nm_card_rare_cave_spider: {model: 632104, display: '&bCave Spider Card'}
+    nm_card_rare_drowned: {model: 632105, display: '&bDrowned Card'}
+    nm_card_rare_endermite: {model: 632106, display: '&bEndermite Card'}
+    nm_card_rare_evoker: {model: 632107, display: '&bEvoker Card'}
+    nm_card_rare_guardian: {model: 632108, display: '&bGuardian Card'}
+    nm_card_rare_phantom: {model: 632109, display: '&bPhantom Card'}
+    nm_card_rare_shulker: {model: 632110, display: '&bShulker Card'}
+    nm_card_rare_silverfish: {model: 632111, display: '&bSilverfish Card'}
+    nm_card_rare_skeleton_horse: {model: 632112, display: '&bSkeleton Horse Card'}
+    nm_card_rare_spider: {model: 632113, display: '&bSpider Card'}
+    nm_card_rare_strider: {model: 632114, display: '&bStrider Card'}
+    nm_card_rare_vindicator: {model: 632115, display: '&bVindicator Card'}
+    nm_card_rare_zoglin: {model: 632116, display: '&bZoglin Card'}
+    nm_card_rare_zombie_villager: {model: 632117, display: '&bZombie Villager Card'}
+    nm_card_rare_zombified_piglin: {model: 632118, display: '&bZombified Piglin Card'}
+    nm_card_ultra-rare_warden: {model: 632201, display: '&dThe Warden Card'}
+    nm_card_armadillo: {model: 633001, display: '&fArmadillo Card'}
+    nm_card_camel: {model: 633002, display: '&fCamel Card'}
+    nm_card_cat: {model: 633003, display: '&fCat Card'}
+    nm_card_cod: {model: 633004, display: '&fCod Card'}
+    nm_card_donkey: {model: 633005, display: '&fDonkey Card'}
+    nm_card_frog: {model: 633006, display: '&fFrog Card'}
+    nm_card_glow_squid: {model: 633007, display: '&fGlow Squid Card'}
+    nm_card_llama: {model: 633008, display: '&fLlama Card'}
+    nm_card_mule: {model: 633009, display: '&fMule Card'}
+    nm_card_panda: {model: 633010, display: '&fPanda Card'}
+    nm_card_polar_bear: {model: 633011, display: '&fPolar Bear Card'}
+    nm_card_rabbit: {model: 633012, display: '&fRabbit Card'}
+    nm_card_salmon: {model: 633013, display: '&fSalmon Card'}
+    nm_card_sniffer: {model: 633014, display: '&fSniffer Card'}
+    nm_card_squid: {model: 633015, display: '&fSquid Card'}
+    nm_card_trader_llama: {model: 633016, display: '&fTrader Llama Card'}
+    nm_card_tropical_fish: {model: 633017, display: '&fTropical Fish Card'}
+    nm_card_wandering_trader: {model: 633018, display: '&fWandering Trader Card'}
+    nm_card_rare_armadillo: {model: 633101, display: '&bArmadillo Card'}
+    nm_card_rare_camel: {model: 633102, display: '&bCamel Card'}
+    nm_card_rare_cat: {model: 633103, display: '&bCat Card'}
+    nm_card_rare_cod: {model: 633104, display: '&bCod Card'}
+    nm_card_rare_donkey: {model: 633105, display: '&bDonkey Card'}
+    nm_card_rare_frog: {model: 633106, display: '&bFrog Card'}
+    nm_card_rare_glow_squid: {model: 633107, display: '&bGlow Squid Card'}
+    nm_card_rare_llama: {model: 633108, display: '&bLlama Card'}
+    nm_card_rare_mule: {model: 633109, display: '&bMule Card'}
+    nm_card_rare_panda: {model: 633110, display: '&bPanda Card'}
+    nm_card_rare_polar_bear: {model: 633111, display: '&bPolar Bear Card'}
+    nm_card_rare_rabbit: {model: 633112, display: '&bRabbit Card'}
+    nm_card_rare_salmon: {model: 633113, display: '&bSalmon Card'}
+    nm_card_rare_sniffer: {model: 633114, display: '&bSniffer Card'}
+    nm_card_rare_squid: {model: 633115, display: '&bSquid Card'}
+    nm_card_rare_trader_llama: {model: 633116, display: '&bTrader Llama Card'}
+    nm_card_rare_tropical_fish: {model: 633117, display: '&bTropical Fish Card'}
+    nm_card_rare_wandering_trader: {model: 633118, display: '&bWandering Trader Card'}
+    nm_card_ultra-rare_iron_golem: {model: 633201, display: '&dIron Golem Card'}
+    nm_card_alligator: {model: 634001, display: '&fAlligator Card'}
+    nm_card_budgie: {model: 634002, display: '&fBudgie Card'}
+    nm_card_capybara: {model: 634003, display: '&fCapybara Card'}
+    nm_card_cassowary: {model: 634004, display: '&fCassowary Card'}
+    nm_card_chameleon: {model: 634005, display: '&fChameleon Card'}
+    nm_card_elephant: {model: 634006, display: '&fElephant Card'}
+    nm_card_flamingo: {model: 634007, display: '&fFlamingo Card'}
+    nm_card_giraffe: {model: 634008, display: '&fGiraffe Card'}
+    nm_card_great_white_shark: {model: 634009, display: '&fGreat White Shark Card'}
+    nm_card_grizzly_bear: {model: 634010, display: '&fGrizzly Bear Card'}
+    nm_card_hedgehog: {model: 634011, display: '&fHedgehog Card'}
+    nm_card_hippo: {model: 634012, display: '&fHippo Card'}
+    nm_card_ibex_nubian: {model: 634013, display: '&fNubian Ibex Card'}
+    nm_card_koala: {model: 634014, display: '&fKoala Card'}
+    nm_card_owl: {model: 634015, display: '&fOwl Card'}
+    nm_card_penguin: {model: 634016, display: '&fPenguin Card'}
+    nm_card_raccoon: {model: 634017, display: '&fRaccoon Card'}
+    nm_card_zebra: {model: 634018, display: '&fZebra Card'}
+    nm_card_rare_alligator: {model: 634101, display: '&bAlligator Card'}
+    nm_card_rare_budgie: {model: 634102, display: '&bBudgie Card'}
+    nm_card_rare_capybara: {model: 634103, display: '&bCapybara Card'}
+    nm_card_rare_cassowary: {model: 634104, display: '&bCassowary Card'}
+    nm_card_rare_chameleon: {model: 634105, display: '&bChameleon Card'}
+    nm_card_rare_elephant: {model: 634106, display: '&bElephant Card'}
+    nm_card_rare_flamingo: {model: 634107, display: '&bFlamingo Card'}
+    nm_card_rare_giraffe: {model: 634108, display: '&bGiraffe Card'}
+    nm_card_rare_great_white_shark: {model: 634109, display: '&bGreat White Shark Card'}
+    nm_card_rare_grizzly_bear: {model: 634110, display: '&bGrizzly Bear Card'}
+    nm_card_rare_hedgehog: {model: 634111, display: '&bHedgehog Card'}
+    nm_card_rare_hippo: {model: 634112, display: '&bHippo Card'}
+    nm_card_rare_ibex_nubian: {model: 634113, display: '&bNubian Ibex Card'}
+    nm_card_rare_koala: {model: 634114, display: '&bKoala Card'}
+    nm_card_rare_owl: {model: 634115, display: '&bOwl Card'}
+    nm_card_rare_penguin: {model: 634116, display: '&bPenguin Card'}
+    nm_card_rare_raccoon: {model: 634117, display: '&bRaccoon Card'}
+    nm_card_rare_zebra: {model: 634118, display: '&bZebra Card'}
+    nm_card_ultra-rare_butterflies: {model: 634201, display: '&dSwarm of Butterflies Card'}
+    nm_card_alex: {model: 635001, display: '&fAlex Card'}
+    nm_card_moobloom: {model: 635002, display: '&fMoobloom Card'}
+    nm_card_steve: {model: 635003, display: '&fSteve Card'}
+    nm_card_zombie_horse: {model: 635004, display: '&fZombie Horse Card'}
+    nm_card_snow_golem: {model: 635005, display: '&fSnow Golem Card'}
+    nm_card_tadpole: {model: 635006, display: '&fTadpole Card'}
+    nm_card_thegamer330033: {model: 635011, display: '&fTheGamer330033 Card'}
+    nm_card_aro_lg: {model: 635012, display: '&fAro_LG Card'}
+    nm_card_block_mrtii: {model: 635013, display: '&fBlock_Mrtii Card'}
+    nm_card_ljf2008: {model: 635014, display: '&fljf2008 Card'}
+    nm_card_seeyou9797: {model: 635015, display: '&fSeeyou9797 Card'}
+    nm_card_rare_alex: {model: 635101, display: '&bAlex Card'}
+    nm_card_rare_moobloom: {model: 635102, display: '&bMoobloom Card'}
+    nm_card_rare_steve: {model: 635103, display: '&bSteve Card'}
+    nm_card_rare_zombie_horse: {model: 635104, display: '&bZombie Horse Card'}
+    nm_card_rare_snow_golem: {model: 635105, display: '&bSnow Golem Card'}
+    nm_card_rare_tadpole: {model: 635106, display: '&bTadpole Card'}
+    nm_card_ultra-rare_creaking: {model: 635201, display: '&dThe Creaking Card'}
+
+water-guns:
+  enabled: true
+  particle-step: 0.4
+  variants:
+    636001:
+      range: 18.0
+      damage: 1.0
+      knockback: 0.25
+      cooldown-milliseconds: 550
+    636002:
+      range: 24.0
+      damage: 1.5
+      knockback: 0.35
+      cooldown-milliseconds: 400
+    636003:
+      range: 30.0
+      damage: 2.0
+      knockback: 0.45
+      cooldown-milliseconds: 275
+
+messages:
+  prefix: "&8[&9TradingCards&8] "
+  no-permission: "&cDafür hast du keine Berechtigung."
+  usage: "&7Benutzung: &f/nstc give <Spieler> [Anzahl] [Pack] &7oder &f/nstc reload"
+  player-not-found: "&cDieser Spieler ist nicht online."
+  invalid-amount: "&cDie Anzahl muss zwischen 1 und 64 liegen."
+  unknown-pack: "&cUnbekanntes Pack. Verfügbar: %packs%"
+  given: "&a%amount%x %pack% &aan %player% gegeben."
+  received: "&aDu hast %amount%x %pack% &aerhalten."
+  reloaded: "&aKonfiguration neu geladen."
+  skill-failed: "&cDas Karten-Pack konnte nicht geöffnet werden. Prüfe den MythicMobs-Skill."
+  player-only: "&cDas geht nur im Spiel."
+  display-empty: "&cKeine Karte passt auf den Filter &f%filter%&c."
+  display-done: "&a%placed%&7/&a%total%&7 Karten in unsichtbaren Rahmen gesetzt (&f%columns%&7 Spalten). Aufraeumen: &f/kill @e[type=item_frame,distance=..40]"
+  unknown-card: "&cKarte konnte nicht ausgegeben werden - prüfe cards.entries in der config.yml."
