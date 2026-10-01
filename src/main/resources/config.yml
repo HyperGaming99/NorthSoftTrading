@@ -4,47 +4,47 @@ lore:
   badges: true
   tooltip-style: true
 
-# Booster-Packs. Rechtsklick startet den MythicMobs-Skill, der die Karten verteilt.
+# Booster-Packs. Rechtsklick startet den BetterMob-Skill, der die Karten verteilt.
 # Die custom-model-data muss zum Eintrag in assets/minecraft/items/paper.json passen.
 packs:
   mortal_monsters:
     material: PAPER
     custom-model-data: 632000
-    mythic-skill: nm_pack_open_mortal_monsters
+    skill: nm_pack_open_mortal_monsters
     display: '&5Mortal Monsters &fBooster Pack'
     consume-on-success: true
     cooldown-milliseconds: 500
   nascent_nature:
     material: PAPER
     custom-model-data: 633000
-    mythic-skill: nm_pack_open_nascent_nature
+    skill: nm_pack_open_nascent_nature
     display: '&eNascent Nature &fBooster Pack'
     consume-on-success: true
     cooldown-milliseconds: 500
   the_menagerie:
     material: PAPER
     custom-model-data: 634000
-    mythic-skill: nm_pack_open_the_menagerie
+    skill: nm_pack_open_the_menagerie
     display: '&6The Menagerie &fBooster Pack'
     consume-on-success: true
     cooldown-milliseconds: 500
   starter:
     material: PAPER
     custom-model-data: 635000
-    mythic-skill: nm_pack_open_starter_pack
+    skill: nm_pack_open_starter_pack
     display: '&9Starter &fBooster Pack'
     consume-on-success: true
     cooldown-milliseconds: 500
   helper:
     material: PAPER
     custom-model-data: 635010
-    mythic-skill: nm_pack_open_helper_pack
+    skill: nm_pack_open_helper_pack
     display: '&cHelper &fBooster Pack'
     consume-on-success: true
     cooldown-milliseconds: 500
 # Karten, die der Mechanic nstcgivecard{card=<id>} ausgeben kann.
 # Ohne ItemsAdder/Crucible baut das Plugin die Items selbst - deshalb stehen
-# Model und Name hier und nicht nur in den MythicMobs-Items.
+# Model und Name hier und nicht nur in den BetterMob-Items.
 cards:
   material: PAPER
   lore:
@@ -210,7 +210,7 @@ messages:
   given: "&a%amount%x %pack% &aan %player% gegeben."
   received: "&aDu hast %amount%x %pack% &aerhalten."
   reloaded: "&aKonfiguration neu geladen."
-  skill-failed: "&cDas Karten-Pack konnte nicht geöffnet werden. Prüfe den MythicMobs-Skill."
+  skill-failed: "&cDas Karten-Pack konnte nicht geöffnet werden. Prüfe den BetterMob-Skill."
   player-only: "&cDas geht nur im Spiel."
   display-empty: "&cKeine Karte passt auf den Filter &f%filter%&c."
   display-done: "&a%placed%&7/&a%total%&7 Karten in unsichtbaren Rahmen gesetzt (&f%columns%&7 Spalten). Aufraeumen: &f/kill @e[type=item_frame,distance=..40]"

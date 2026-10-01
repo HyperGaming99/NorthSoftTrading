@@ -3,8 +3,8 @@ version: '1.3.0'
 main: de.northsoft.tradingcards.NorthSoftTradingCardsPlugin
 api-version: '1.21'
 authors: [NorthSoft]
-description: Verbindet Trading Cards und Songkran-Wasserpistolen mit MythicMobs.
-depend: [MythicMobs]
+description: Verbindet Trading Cards und Songkran-Wasserpistolen mit BetterMob.
+depend: [BetterMob]
 
 commands:
   nstradingcards:

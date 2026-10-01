@@ -1,7 +1,6 @@
 /*
  * 
  * Could not load the following classes:
- *  io.lumine.mythic.bukkit.MythicBukkit
  *  net.kyori.adventure.key.Key
  *  net.kyori.adventure.text.Component
  *  net.kyori.adventure.text.TextComponent
@@ -47,7 +46,7 @@
  */
 package de.northsoft.tradingcards;
 
-import io.lumine.mythic.bukkit.MythicBukkit;
+import eu.northsoft.bettermob.api.BetterMobAPI;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -165,7 +164,7 @@ TabCompleter {
         Material material = this.material(section.getString("material", "PAPER"));
         int modelData = section.getInt("custom-model-data", defaultModelData);
         long cooldownMillis = Math.max(0L, section.getLong("cooldown-milliseconds", 500L));
-        PackDefinition definition = new PackDefinition(id, material, modelData, section.getString("mythic-skill", defaultSkill), section.getString("display", defaultDisplay), section.getBoolean("consume-on-success", true), cooldownMillis * 1000000L);
+        PackDefinition definition = new PackDefinition(id, material, modelData, section.getString("skill", section.getString("mythic-skill", defaultSkill)), section.getString("display", defaultDisplay), section.getBoolean("consume-on-success", true), cooldownMillis * 1000000L);
         this.packs.put(id.toLowerCase(Locale.ROOT), definition);
     }
 
@@ -230,10 +229,10 @@ TabCompleter {
         }
         this.lastUseNanos.put(player.getUniqueId(), now);
         try {
-            cast = MythicBukkit.inst().getAPIHelper().castSkill((Entity)player, pack.skill());
+            cast = BetterMobAPI.get().runSkill(pack.skill(), player);
         }
         catch (RuntimeException exception) {
-            this.getLogger().severe("MythicMobs-Skill '" + pack.skill() + "' konnte nicht gestartet werden: " + exception.getMessage());
+            this.getLogger().severe("BetterMob-Skill '" + pack.skill() + "' konnte nicht gestartet werden: " + exception.getMessage());
             cast = false;
         }
         if (!cast) {
